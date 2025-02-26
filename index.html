@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones para Dibujar una Bicicleta</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+        <!-- Rueda trasera -->
+        <circle cx="100" cy="200" r="30" fill="black" />
+        <circle cx="100" cy="200" r="28" fill="none" stroke="white" stroke-width="4" />
+
+        <!-- Rueda delantera -->
+        <circle cx="300" cy="200" r="30" fill="black" />
+        <circle cx="300" cy="200" r="28" fill="none" stroke="white" stroke-width="4" />
+
+        <!-- Chasis de la bicicleta -->
+        <line x1="100" y1="200" x2="200" y2="120" stroke="#FF0000" stroke-width="4" /> <!-- Marco trasero -->
+        <line x1="200" y1="120" x2="300" y2="200" stroke="#FF0000" stroke-width="4" /> <!-- Marco delantero -->
+        <line x1="100" y1="200" x2="300" y2="200" stroke="#FF0000" stroke-width="4" /> <!-- Base del marco -->
+        <line x1="200" y1="120" x2="200" y2="200" stroke="#FF0000" stroke-width="4" /> <!-- Parte vertical del marco -->
+
+        <!-- Manubrio -->
+        <line x1="200" y1="120" x2="250" y2="100" stroke="#000" stroke-width="4" /> <!-- Parte vertical -->
+        <line x1="250" y1="100" x2="240" y2="120" stroke="#000" stroke-width="4" /> <!-- Parte horizontal -->
+
+        <!-- Silla -->
+        <rect x="190" y="110" width="20" height="10" fill="#000" /> <!-- Silla -->
+
+        <!-- Pedales -->
+        <line x1="200" y1="200" x2="210" y2="190" stroke="#000" stroke-width="4" /> <!-- Pedal derecho -->
+        <line x1="200" y1="200" x2="190" y2="190" stroke="#000" stroke-width="4" /> <!-- Pedal izquierdo -->
+
+        <!-- Engranaje -->
+        <circle cx="200" cy="200" r="10" fill="#FFD700" /> <!-- Engranaje -->
+        <circle cx="200" cy="200" r="8" fill="none" stroke="black" stroke-width="2" /> <!-- Contorno del engranaje -->
+    </svg>
+</body>
+</html>
